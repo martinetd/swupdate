@@ -312,4 +312,12 @@ config UCFW_OLD_LIBGPIOD
 	  Rather there is no way to get this changes from the library
 	  at build time.
 
+config EXECHANDLER
+	bool "Exec handler"
+	default n
+	depends on RAW
+	help
+	  This handler writes file to temp space and execute an arbitrary
+	  command with it.
+
 endmenu
